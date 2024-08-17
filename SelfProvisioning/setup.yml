@@ -1,0 +1,15 @@
+- hosts: localhost
+  become: yes
+  tasks:
+    - name: Update and upgrade apt packages
+      apt:
+        update_cache: yes
+        upgrade: dist
+
+    - name: Install basic tools
+      apt:
+        name: "{{ item }}"
+        state: present
+      with_items:
+        - git
+        - vim
