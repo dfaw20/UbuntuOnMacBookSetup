@@ -10,5 +10,6 @@ sudo apt-get install ansible
 パスワード入力あり
 
 ```
+cd SelfProvisioning/
 ansible-playbook -i hosts setup.yml --ask-become-pass
 ```

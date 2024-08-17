@@ -13,3 +13,7 @@
       with_items:
         - git
         - vim
+        - firefox
+        - libreoffice
+        - ansible # プロビジョニング
+        - brightnessctl # 明るさ調整
